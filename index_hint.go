@@ -1,8 +1,8 @@
 package hints
 
 import (
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
+	"github.com/wubin1989/gorm"
+	"github.com/wubin1989/gorm/clause"
 )
 
 type IndexHint struct {

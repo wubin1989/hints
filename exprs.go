@@ -1,6 +1,6 @@
 package hints
 
-import "gorm.io/gorm/clause"
+import "github.com/wubin1989/gorm/clause"
 
 type Exprs []clause.Expression
 

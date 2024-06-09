@@ -3,9 +3,9 @@ package hints_test
 import (
 	"testing"
 
-	"gorm.io/driver/sqlite"
-	"gorm.io/gorm"
-	"gorm.io/hints"
+	"github.com/wubin1989/gorm"
+	"github.com/wubin1989/hints"
+	"github.com/wubin1989/sqlite"
 )
 
 var DB, _ = gorm.Open(sqlite.Open(":memory:"), &gorm.Config{

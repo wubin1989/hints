@@ -7,7 +7,7 @@ Optimizer/Index/Comment Hints support for GORM
 ## Optimizer Hints
 
 ```go
-import "gorm.io/hints"
+import "github.com/wubin1989/hints"
 
 DB.Clauses(hints.New("hint")).Find(&User{})
 // SELECT * /*+ hint */ FROM `users`
@@ -16,7 +16,7 @@ DB.Clauses(hints.New("hint")).Find(&User{})
 ## Index Hints
 
 ```go
-import "gorm.io/hints"
+import "github.com/wubin1989/hints"
 
 DB.Clauses(hints.UseIndex("idx_user_name")).Find(&User{})
 // SELECT * FROM `users` USE INDEX (`idx_user_name`)
@@ -34,7 +34,7 @@ DB.Clauses(
 ## Comment Hints
 
 ```go
-import "gorm.io/hints"
+import "github.com/wubin1989/hints"
 
 DB.Clauses(hints.Comment("select", "master")).Find(&User{})
 // SELECT /*master*/ * FROM `users`;
